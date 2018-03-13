@@ -6,7 +6,7 @@ set -o noglob
 # Headers and Logging
 #
 
-source ./src/helper.sh
+source $STEP_DIR/src/helper.sh
 
 STEP_PREFIX="WERCKER_BUILDNUMBER_GENERATOR"
 step_var() {

@@ -2,7 +2,7 @@
 set +e
 set -o noglob
 
-source ./helper.sh
+source $STEP_DIR/src/helper.sh
 
 while getopts ":U:k:g:u:a:s:b:c:d:" opt; do
   case $opt in
