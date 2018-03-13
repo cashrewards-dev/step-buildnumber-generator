@@ -14,3 +14,6 @@ deploy:
         directory: wercker
 ```
 
+## Result
+Two files '.build_number' and '.build_info' are save in the directory you specified in the step ( 'directory' option )
+
