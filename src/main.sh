@@ -54,9 +54,6 @@ export _BUILDNUMBER="$(cat $_DIRECTORY/.build_number)"
 echo _BUILDNUMBER="$_BUILDNUMBER"
 
 
-
-
-
 # GENERATED_BUILD_NR=$($WERCKER_STEP_ROOT/src/fetch.py 
 #       \ -U $(step_var 'BASE_URL')
 #       \ -k $(step_var 'API_KEY')      
