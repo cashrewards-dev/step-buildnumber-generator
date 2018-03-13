@@ -2,7 +2,7 @@
 set +e
 set -o noglob
 
-source $STEP_DIR/src/helper.sh
+source $WERCKER_STEP_ROOT/src/helper.sh
 
 while getopts ":U:k:g:u:a:s:b:c:d:" opt; do
   case $opt in

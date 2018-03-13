@@ -6,7 +6,7 @@ set -o noglob
 # Headers and Logging
 #
 
-source $STEP_DIR/src/helper.sh
+source $WERCKER_STEP_ROOT/src/helper.sh
 
 STEP_PREFIX="WERCKER_BUILDNUMBER_GENERATOR"
 step_var() {
@@ -50,7 +50,7 @@ if [ -z "$(step_var 'DIRECTORY')" ]; then
   exit 1
 fi
 
-source $STEP_DIR/src/main.sh \
+source $WERCKER_STEP_ROOT/src/main.sh \
 					  -d "$(step_var 'DIRECTORY')" \
 					  -U "$(step_var 'BASE_URL')" \
 					  -a "$(step_var 'APP')" \
