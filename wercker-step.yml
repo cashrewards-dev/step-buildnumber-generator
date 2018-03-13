@@ -1,0 +1,20 @@
+name: buildnumber-generator
+version: 0.0.1
+description: build number generator client
+keywords:
+  - version
+  - build number
+properties:
+  base_url:
+    type: string
+    required: true  
+  api_key:
+    type: string
+    required: true
+  app:
+    type: string
+    required: true
+  directory:
+    type: string
+    required: true 
+
