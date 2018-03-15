@@ -39,13 +39,13 @@ cat $_DIRECTORY/.build_info
 # Parse response and get build number
 if type_exists 'python'
   then
-  echo $_BUILD_INFO | python -c "import sys, json; print json.load(sys.stdin)['item']['buildnumber']" > "$_DIRECTORY/.build_number"  
+  echo $_BUILD_INFO | python -c "import sys, json; print json.load(sys.stdin)['item']['build_metadata']" > "$_DIRECTORY/.build_number"  
 elif type_exists 'php'
   then
-  echo $_BUILD_INFO | php -r '$a =json_decode(file_get_contents("php://stdin"), true); echo $a["item"]["buildnumber"];' > "$_DIRECTORY/.build_number"
+  echo $_BUILD_INFO | php -r '$a =json_decode(file_get_contents("php://stdin"), true); echo $a["item"]["build_metadata"];' > "$_DIRECTORY/.build_number"
 elif type_exists 'jq'
   then
-  echo $_BUILD_INFO | jq -r '.buildnumber' > "$_DIRECTORY/.item.build_number"
+  echo $_BUILD_INFO | jq -r '.buildnumber' > "$_DIRECTORY/.item.build_metadata"
 else
   error "Please install python or PHP"
 fi
