@@ -6,16 +6,16 @@ tags:
   - version
   - build number
 properties:
-  base_url:
+  - name: base_url
     type: string
     required: true  
-  api_key:
+  - name: api_key
     type: string
     required: true
-  app:
+  - name: app
     type: string
     required: true
-  directory:
+  - name: directory
     type: string
     required: true 
 

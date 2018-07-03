@@ -15,4 +15,6 @@ publish:
   # packages: ca-certificates
 
     - internal/publish-step:
-      owner: $PL_STEP_OWNER
+      owner: $WERCKER_APPLICATION_OWNER_NAME      
+      #owner: $PL_STEP_OWNER
+
