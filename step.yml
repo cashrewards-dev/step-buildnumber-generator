@@ -1,7 +1,8 @@
+# step.yml
 name: buildnumber-generator
-version: 0.0.6
-description: build number generator client
-keywords:
+version: 0.1.0
+summary: build number generator client
+tags:
   - version
   - build number
 properties:
